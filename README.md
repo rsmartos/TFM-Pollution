@@ -16,16 +16,20 @@ La recogida de estos datos ha dado como resultado un fichero por cada año desde
 En cada fichero se pueden ver diariamente los indices de las particulas que el Ayuntamiento de Madrid investiga y captura.
 Estos son:
 
--
--
--
--
--
--
--
--
--
--
+-Dióxido de Azufre
+-Monóxido de carbono
+-Monóxido de Nitrógeno
+-Dióxido de Nitrogeno
+-Óxidos de Nitrógeno
+-Ozono
+-Tolueno
+-Benceno
+-Etilbenceno
+-Metaxileno
+-Paraxileno
+-Ortoxileno
+-Hidrocarburos totales
+-Hidrocarburos no metánicos
 
 Dentro del conjunto de datos podremos ver que segn su terminación, si es en 'v' o en 'N', significar que el dato está validado y por lo tanto se podrá incluir en el conjunto de datos a analizar, en caso contrario, se retirará de la muestra ya que el dato se encontrará erroneo y no se podrá obtener el verdadero.
 
