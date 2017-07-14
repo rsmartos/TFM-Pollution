@@ -64,4 +64,10 @@ Para este proyecto se utiliza python y se incluyen todos los datos en un DataFra
   -Por seguridad y manejabilidad de exportan todos estos datos a un csv que contiene todos los datos en bruto con una leve       limpieza, donde se comprueba que el valor de los datos esté validado y acto seguido, se elimina la 'V' final y se convierte el datos en float para su mejor manejo. En caso de no estar validado el dato, se sustituye por 0.0.
   -Creación de un DataFrame que contenga una fila por cada día único y no todos los días del mes en columnas por cada mes.
   
-  
+## Uso
+Existen varios archivos de extracción de datos o manejo, pero todos han sido incluidos en un solo archivo "main.ipynb" que contiene todas las funciones ordenadas y explicadas, ejecutando por completo el archivo se generarían todos los csv donde algunos contienen todos los datos filtrados y ordenados y otros tienen los datos separados por elemento contaminante.
+
+## Gráficos
+Los gráficos han sido generados por Tablue su mayoría, donde se puede ver el historico de los elementos de contaminación ms importantes y su recorrido a lo largo del tiempo.
+
+También se puede observar una carpeta "python_charts", donde al ejecutar python, se incluiran los gráficos que genera python después de hacer una regresión lineal para predecir los datos. Estos gráficos se generarán de forma separada por cada elemento, aprovechando los csv generados previamente por python.
