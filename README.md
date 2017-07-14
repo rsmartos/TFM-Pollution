@@ -1,10 +1,7 @@
 # TFM-Pollution
 
-### Este proyecto intentará hayar una predicción de la contaminación en la ciudad de Madrid.
+## Este proyecto intentará hayar una un modelo de predicción de la contaminación en Madrid con el que poder descubrir los días de mayor contaminación en la ciudad.
 
-### Se utilizarán python como herramienta principal.
-
-### Los datos son obtenidos de la web del Ayuntamiento de Madrid y son datos públicos y gratuitos.
 
 ## Introducción:
 
@@ -35,6 +32,21 @@ Dentro del conjunto de datos podremos ver que segn su terminación, si es en 'v'
 
 El Ayuntamiento de Madrid ha utilizado dos formatos de datos ligeramente distintos, un primero desde el año 2001 hasta el año 2010 y otro desde el 2011 en adelante, lo que implica que la recogida de datos se deberá de hacer por duplicado, respetando los formatos de cada uno y posteriormente juntándolos en un solo conjunto de datos.
 
+## Herramientas utilizadas.
+
+El lenguaje utilizado ha sido Python, con él se ha desarrollado todo el código por completo, incluyendose este en un solo archivo "main.ipynb" con el que se puede obtener todos los gráficos necesarios.
+Las librerías utilizadas han sido:
+
+-Pandas
+-Numpy
+-DateTime
+-Matplotlib
+-Scikit Learn
+-Seaborn
+
+Adems de esto, se ha utilizado Tableau para obtener gráficos específicos de los historicos de los elementos contaminantes más importantes, gracias a esto se ha obtenido una primera aproximacin a los datos, viendo su histórico de una manera más gráfica y de una forma rápida después de haber limpiado y organizado los datos segn correspondía para su óptima manipulación.
+
+
 ## Descripción de los datos:
 
 Los datos proporcionados por el Ayuntamiento de Madrid son descargados en texto plano en formato .txt, junto con los datos, el Ayuntamiento de Madrid provee de un manual de uso de estos datos, donde se encuentra una leyenda y un manual de los datos, sobre que significa cada dato y como obtenerlos de forma correcta.
@@ -56,6 +68,7 @@ Cada fichero .txt contiene las siguientes columnas, más una por cada día del m
   
 Los valores de cada día vienen expresados de la siguientes manera '00005V' o '00000N', diferenciandos así los validados de los no validados.
 
+
 ## Metodología
 
 Para este proyecto se utiliza python y se incluyen todos los datos en un DataFrame. Los pasos seguidos son:
@@ -65,9 +78,11 @@ Para este proyecto se utiliza python y se incluyen todos los datos en un DataFra
   -Creación de un DataFrame que contenga una fila por cada día único y no todos los días del mes en columnas por cada mes.
   
 ## Uso
+
 Existen varios archivos de extracción de datos o manejo, pero todos han sido incluidos en un solo archivo "main.ipynb" que contiene todas las funciones ordenadas y explicadas, ejecutando por completo el archivo se generarían todos los csv donde algunos contienen todos los datos filtrados y ordenados y otros tienen los datos separados por elemento contaminante.
 
 ## Gráficos
+
 Los gráficos han sido generados por Tablue su mayoría, donde se puede ver el historico de los elementos de contaminación ms importantes y su recorrido a lo largo del tiempo.
 
 También se puede observar una carpeta "python_charts", donde al ejecutar python, se incluiran los gráficos que genera python después de hacer una regresión lineal para predecir los datos. Estos gráficos se generarán de forma separada por cada elemento, aprovechando los csv generados previamente por python.
